@@ -4,17 +4,18 @@ using Verse;
 
 namespace BlightsExpanded
 {
-    public class CustomBlightDef : Def
+    public class CustomBlightDef : ThingDef
     {
         public int weight;
-        public Type workerClass;
+        public string letterLabel;
+        public string letterText;
 
         private CustomBlight customBlight;
         public CustomBlight CustomBlight
         {
             get
             {
-                customBlight = customBlight ?? (CustomBlight)Activator.CreateInstance(workerClass);
+                customBlight = customBlight ?? (CustomBlight)Activator.CreateInstance(thingClass);
                 return customBlight;
             }
         }

@@ -4,7 +4,7 @@ namespace BlightsExpanded.Blights
 {
     public class DefaultBlight : CustomBlight
     {
-        public override void BlightPlant(Plant plant)
+        public override void SpawnBlight(Plant plant)
         {
             plant.CropBlighted();
         }
