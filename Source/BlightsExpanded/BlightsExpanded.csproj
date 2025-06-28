@@ -62,7 +62,6 @@
         <Compile Include="Patches\JobDriver_PlantWork_MakeNewToils.cs" />
         <Compile Include="Patches\Plant_YieldNow.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
-        <Compile Include="SpookyFakePlant.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />
