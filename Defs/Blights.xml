@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Perseverance</defName>
+    <letterText>the community's perseverance</letterText>
+    <weight>10</weight>
+    <daysLength>0</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GoodTimes</defName>
+    <letterText>the good times coming in the future</letterText>
+    <weight>10</weight>
+    <daysLength>0</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Comradery</defName>
+    <letterText>comradery in the face of danger</letterText>
+    <weight>10</weight>
+    <daysLength>0</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Serenity</defName>
+    <letterText>hope for serenity</letterText>
+    <weight>10</weight>
+    <daysLength>0</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>StillAlive</defName>
+    <letterText>surviving another day</letterText>
+    <weight>10</weight>
+    <daysLength>0</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Fallen</defName>
+    <letterText>the lives of those who have fallen</letterText>
+    <weight>10</weight>
+    <daysLength>0</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>CalmBeforeStorm</defName>
+    <letterText>the calm before the storm</letterText>
+    <weight>10</weight>
+    <daysLength>0</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>AmbrosiaSprout</defName>
+    <letterText>the recent ambrosia sprout</letterText>
+    <weight>50</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>PsychicSoothe</defName>
+    <letterText>the archotech soothing the community</letterText>
+    <weight>200</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ThrumboPasses</defName>
+    <letterText>the sighting of a wild thrumbo</letterText>
+    <weight>100</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GameEndedWanderersJoin</defName>
+    <letterText>the finding of a place to call home</letterText>
+    <weight>500</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Eclipse</defName>
+    <letterText>the eclipse</letterText>
+    <weight>500</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Aurora</defName>
+    <letterText>the other day's beautiful aurora</letterText>
+    <weight>250</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GiveQuest_EndGame_ShipEscape</defName>
+    <letterText>the discovery of a way to escape this planet</letterText>
+    <weight>100</weight>
+    <daysLength>30</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>TamedAnimal</defName>
+    <letterText>{TARGET_labelShort}'s taming of {TARGET2_labelShort}</letterText>
+    <weight>100</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Recruited</defName>
+    <letterText>{TARGET_labelShort}'s recruitment of {TARGET2_labelShort}</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BondedWithAnimal</defName>
+    <letterText>{TARGET_labelShort}'s bond with {TARGET2_labelShort}</letterText>
+    <weight>250</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BecameLover</defName>
+    <letterText>{TARGET_labelShort}'s romance of {TARGET2_labelShort}</letterText>
+    <weight>1000</weight>
+    <daysLength>30</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>DidSurgery</defName>
+    <letterText>{TARGET_labelShort}'s surgery on {TARGET2_labelShort}</letterText>
+    <weight>100</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GaveBirth</defName>
+    <letterText>the birth of {TARGET2_labelShort}</letterText>
+    <weight>2500</weight>
+    <daysLength>10</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Breakup</defName>
+    <letterText>{TARGET_labelShort}'s breakup with {TARGET2_labelShort}</letterText>
+    <weight>50</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>SocialFight</defName>
+    <letterText>{TARGET_labelShort}'s brawl with {TARGET2_labelShort}</letterText>
+    <weight>50</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>CollapseDodged</defName>
+    <letterText>{TARGET_labelShort}'s dodging falling debris</letterText>
+    <weight>10</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>CaravanAssaultSuccessful</defName>
+    <letterText>the successful raid</letterText>
+    <weight>750</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GainedMasterSkillWithPassion</defName>
+    <letterText>{TARGET_labelShort}'s mastery of {TARGET2}</letterText>
+    <weight>250</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>CompletedLongConstructionProject</defName>
+    <letterText>{TARGET_labelShort}'s completion of the {TARGET2_label}</letterText>
+    <weight>50</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>CompletedLongCraftingProject</defName>
+    <letterText>{TARGET_labelShort}'s completion of the {TARGET2_label}</letterText>
+    <weight>50</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>DefeatedHostileFactionLeader</defName>
+    <letterText>{TARGET_labelShort}'s defeat of {TARGET2_labelShort}</letterText>
+    <weight>1000</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>LaunchedShip</defName>
+    <letterText>the launch of the ship off this planet</letterText>
+    <weight>10000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ClosedTheVoid</defName>
+    <letterText>the closing of the void</letterText>
+    <weight>10000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>EmbracedTheVoid</defName>
+    <letterText>our oneness with the void</letterText>
+    <weight>10000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>TileSettled</defName>
+    <letterText>the settlement of a new land</letterText>
+    <weight>500</weight>
+    <daysLength>25</daysLength>
+  </MeaningfulParties.PartyCauseDef> 
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BuiltSnowman</defName>
+    <letterText>the birth of a magical snowman</letterText>
+    <weight>100</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>StruckMineable</defName>
+    <letterText>{TARGET_labelShort}'s discovery of a vein of {TARGET2_label}</letterText>
+    <weight>100</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>FinishedResearchProject</defName>
+    <letterText>{TARGET_labelShort}'s discovery of {TARGET2}</letterText>
+    <weight>100</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>RaidEnemy</defName>
+    <letterText>the survival of an enemy raid</letterText>
+    <weight>350</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Infestation</defName>
+    <letterText>the survival of an infestation</letterText>
+    <weight>350</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ManhunterPack</defName>
+    <letterText>the survival of a manhunter pack</letterText>
+    <weight>100</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Birthday</defName>
+    <letterText>{TARGET_labelShort}'s birthday</letterText>
+    <weight>500</weight>
+    <daysLength>2</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Resurrect</defName>
+    <letterText>the resurrection of {TARGET_labelShort}</letterText>
+    <weight>10000</weight>
+    <daysLength>30</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BabyShower</defName>
+    <letterText>a baby shower for {TARGET_labelShort}</letterText>
+    <weight>5000</weight>
+    <daysLength>6</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BestowingCeremony</defName>
+    <letterText>{TARGET_labelShort}'s newly bestown powers</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>InstallImplant</defName>
+    <letterText>the successful implant of a {TARGET2_label} into {TARGET_labelShort}</letterText>
+    <weight>500</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>AbsorbXenogerm</defName>
+    <letterText>{TARGET_labelShort}'s absorption of {TARGET2_labelShort}'s xenogerm</letterText>
+    <weight>500</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ActivateMonolith</defName>
+    <letterText>the activation of the monolith</letterText>
+    <weight>500</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BuildCubeStructure</defName>
+    <letterText>the construction of a beautiful cube</letterText>
+    <weight>10000</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>CreateXenogerm</defName>
+    <letterText>the creation of a new xenogerm</letterText>
+    <weight>250</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>DevourerDigest</defName>
+    <letterText>the digestion of {TARGET_labelShort} by a devourer</letterText>
+    <weight>20</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>NociosphereDepart</defName>
+    <letterText>the departure of the nociosphere </letterText>
+    <weight>500</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Nuzzle</defName>
+    <letterText>{TARGET_labelShort}'s nuzzling</letterText>
+    <weight>5</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_Hoopstone</defName>
+    <letterText>{TARGET_labelShort}'s incredible hoopstone throw</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_Horseshoes</defName>
+    <letterText>{TARGET_labelShort}'s incredible horseshoe throw</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_GameOfUr</defName>
+    <letterText>{TARGET_labelShort}'s win at a match of the Game of Ur</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_Chess</defName>
+    <letterText>{TARGET_labelShort}'s win at a game of chess</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_Billiards</defName>
+    <letterText>{TARGET_labelShort}'s dexterous billiards play</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_MusicalInstrument</defName>
+    <letterText>{TARGET_labelShort}'s musical ability</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_Poker</defName>
+    <letterText>{TARGET_labelShort}'s royal flush</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>WatchTelevision</defName>
+    <letterText>the finale of a beloved TV series</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>UseTelescope</defName>
+    <letterText>{TARGET_labelShort} finding a new planet on the telescope</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ReleaseAnimalToWild</defName>
+    <letterText>the release of an animal into the wild</letterText>
+    <weight>50</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ActivateArchonexusCore</defName>
+    <letterText>the activation of the archonexus core</letterText>
+    <weight>2500</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>SlaveEmancipation</defName>
+    <letterText>{TARGET2_labelShort}'s emancipation</letterText>
+    <weight>1000</weight>
+    <daysLength>10</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ReleasePrisoner</defName>
+    <letterText>the release of {TARGET2_labelShort}</letterText>
+    <weight>20</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Lessontaking</defName>
+    <letterText>{TARGET_labelShort}'s successful lessons in school</letterText>
+    <weight>50</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Jealous</defName>
+    <letterText>{TARGET_labelShort}'s desire to one-up other parties</letterText>
+    <weight>30</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Masochist</defName>
+    <letterText>{TARGET_labelShort}'s love for pain</letterText>
+    <weight>10</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Pyromaniac</defName>
+    <letterText>{TARGET_labelShort}'s love of fire</letterText>
+    <weight>10</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Nimble</defName>
+    <letterText>{TARGET_labelShort}'s agility in battle</letterText>
+    <weight>20</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Tough</defName>
+    <letterText>{TARGET_labelShort}'s toughness</letterText>
+    <weight>20</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>TooSmart</defName>
+    <letterText>{TARGET_labelShort}'s quick wit</letterText>
+    <weight>20</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Kind</defName>
+    <letterText>{TARGET_labelShort}'s kindness</letterText>
+    <weight>20</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>CreepyBreathing</defName>
+    <letterText>{TARGET_labelShort}'s creepy breathing</letterText>
+    <weight>10</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Pride</defName>
+    <letterText>{TARGET_labelShort}'s pride for who they are</letterText>
+    <weight>50</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Industriousness</defName>
+    <letterText>{TARGET_labelShort}'s hard working attitude</letterText>
+    <weight>20</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>NaturalMood</defName>
+    <letterText>{TARGET_labelShort}'s optimism</letterText>
+    <weight>20</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Nerves</defName>
+    <letterText>{TARGET_labelShort}'s iron-will</letterText>
+    <weight>20</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Beauty</defName>
+    <letterText>{TARGET_labelShort}'s beauty</letterText>
+    <weight>20</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Joyous</defName>
+    <letterText>the joy {TARGET_labelShort} brings to everyone</letterText>
+    <weight>50</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>PsychicDrone</defName>
+    <letterText>the end of the psychic drone</letterText>
+    <weight>500</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ToxicFallout</defName>
+    <letterText>the end of the toxic fallout</letterText>
+    <weight>2000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>VolcanicWinter</defName>
+    <letterText>the end of the volcanic winter</letterText>
+    <weight>1000</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>HeatWave</defName>
+    <letterText>the end of a heat wave</letterText>
+    <weight>500</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ColdSnap</defName>
+    <letterText>the end of a cold snap</letterText>
+    <weight>500</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>DeathPall</defName>
+    <letterText>the dead staying dead</letterText>
+    <weight>500</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GrayPall</defName>
+    <letterText>the end of a gray pall</letterText>
+    <weight>250</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>UnnaturalDarkness</defName>
+    <letterText>the end of the unnatural darkness</letterText>
+    <weight>2000</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>NoxiousHaze</defName>
+    <letterText>the end of the noxious haze</letterText>
+    <weight>500</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Plague</defName>
+    <letterText>{TARGET_labelShort}'s recovery from the plague</letterText>
+    <weight>150</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GutWorms</defName>
+    <letterText>{TARGET_labelShort}'s recovery from gut worms</letterText>
+    <weight>50</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>WoundInfection</defName>
+    <letterText>{TARGET_labelShort}'s recovery from infection</letterText>
+    <weight>50</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Flu</defName>
+    <letterText>{TARGET_labelShort}'s recovery from the flu</letterText>
+    <weight>50</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Malaria</defName>
+    <letterText>{TARGET_labelShort}'s recovery from malaria</letterText>
+    <weight>150</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>SleepingSickness</defName>
+    <letterText>{TARGET_labelShort}'s recovery from sleeping sickness</letterText>
+    <weight>150</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Blindness</defName>
+    <letterText>the cure of {TARGET_labelShort}'s blindness</letterText>
+    <weight>2500</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Dementia</defName>
+    <letterText>the cure of {TARGET_labelShort}'s dementia</letterText>
+    <weight>2500</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Alzheimers</defName>
+    <letterText>the cure of {TARGET_labelShort}'s Alzheimer's</letterText>
+    <weight>2500</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>HeartArteryBlockage</defName>
+    <letterText>the cure of {TARGET_labelShort}'s heart artery blockage</letterText>
+    <weight>2500</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>AlcoholAddiction</defName>
+    <letterText>the cure of {TARGET_labelShort}'s alcohol addiction</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GoJuiceAddiction</defName>
+    <letterText>the cure of {TARGET_labelShort}'s go juice addiction</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>PsychiteAddiction</defName>
+    <letterText>the cure of {TARGET_labelShort}'s psychite addiction</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>SmokeleafAddiction</defName>
+    <letterText>the cure of {TARGET_labelShort}'s smokeleaf addiction</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>WakeUpAddiction</defName>
+    <letterText>the cure of {TARGET_labelShort}'s wakeup addiction</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>AnimaTreeLinking</defName>
+    <letterText>the linking of {TARGET_labelShort} to the anima tree</letterText>
+    <weight>2000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BlindingCeremony</defName>
+    <letterText>the blinding of {TARGET_labelShort}</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ScarificationCeremony</defName>
+    <letterText>the new scars of {TARGET_labelShort}</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>TreeConnection</defName>
+    <letterText>the linking of {TARGET_labelShort} to a gauranlen tree</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Conversion</defName>
+    <letterText>the conversion of {TARGET_labelShort}</letterText>
+    <weight>1000</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GladiatorDuel</defName>
+    <letterText>the gladiator duel between {TARGET_labelShort} and {TARGET2_labelShort}</letterText>
+    <weight>1000</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Execution</defName>
+    <letterText>{TARGET_labelShort}'s execution of {TARGET2_labelShort}</letterText>
+    <weight>1000</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>SacrificePrisoner</defName>
+    <letterText>{TARGET_labelShort}'s sacrificial killing of {TARGET2_labelShort}</letterText>
+    <weight>1000</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>RoleChange</defName>
+    <letterText>{TARGET_labelShort}'s new role in the community</letterText>
+    <weight>500</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Trial</defName>
+    <letterText>the outcome of {TARGET_labelShort}'s trial</letterText>
+    <weight>1000</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ThroneSpeech</defName>
+    <letterText>{TARGET_labelShort}'s speech</letterText>
+    <weight>100</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>LeaderSpeech</defName>
+    <letterText>{TARGET_labelShort}'s speech</letterText>
+    <weight>100</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>VEE_IceAge</defName>
+    <letterText>the end of the recent ice age</letterText>
+    <weight>2500</weight>
+    <daysLength>30</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>VEE_GlobalWarming</defName>
+    <letterText>the end of the recent phase of global warming</letterText>
+    <weight>2500</weight>
+    <daysLength>30</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>VEE_PsychicRain</defName>
+    <letterText>the end of the weeks of psychic rain</letterText>
+    <weight>2500</weight>
+    <daysLength>10</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>VEE_LongNight</defName>
+    <letterText>the end of the long night</letterText>
+    <weight>2500</weight>
+    <daysLength>10</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+</Defs>
