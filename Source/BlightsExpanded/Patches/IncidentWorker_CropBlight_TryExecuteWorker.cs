@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
 using BlightsExpanded.Blights;
@@ -26,6 +28,10 @@ namespace BlightsExpanded.Patches
             var cropBlighted = AccessTools.Method(typeof(Plant), nameof(Plant.CropBlighted));
             var chosenBlight = typeof(IncidentWorker_CropBlight_TryExecuteWorker)
                 .GetField(nameof(ChosenBlight), BindingFlags.Public | BindingFlags.Static);
+            var taggedStringImplicitCast = typeof(TaggedString)
+                .GetMethods(BindingFlags.Public | BindingFlags.Static)
+                .First(m => m.Name == "op_Implicit"
+                            && m.GetParameters()[0].ParameterType == typeof(string));
 
             var found = 0;
             var originalCodes = new List<CodeInstruction>(instructions);
@@ -40,7 +46,7 @@ namespace BlightsExpanded.Patches
                 {
                     codes.Insert(i + 2,
                         new CodeInstruction(OpCodes.Call,
-                            typeof(CustomBlightHelper).GetMethod(nameof(CustomBlightHelper.PickBlight))));
+                            typeof(IncidentWorker_CropBlight_TryExecuteWorker).GetMethod(nameof(ChooseBlight))));
                     found++;
                 }
                 // replace blightableNowPlant.CropBlighted with custom blight spawn
@@ -59,8 +65,14 @@ namespace BlightsExpanded.Patches
                 else if (instruction.opcode == OpCodes.Ldstr
                          && (string)instruction.operand == "LetterLabelCropBlight")
                 {
-                    while (codes[i].opcode != OpCodes.Ldsfld && codes[i].operand != LetterDefOf.NegativeEvent)
+                    while (true)
                     {
+                        if (codes[i].opcode == OpCodes.Ldsfld && (FieldInfo)codes[i].operand ==
+                            typeof(LetterDefOf).GetRuntimeField(nameof(LetterDefOf.NegativeEvent)))
+                        {
+                            break;
+                        }
+
                         codes.RemoveAt(i);
                     }
 
@@ -70,13 +82,17 @@ namespace BlightsExpanded.Patches
                         new CodeInstruction(OpCodes.Ldsfld, chosenBlight),
                         new CodeInstruction(OpCodes.Ldfld, typeof(Thing).GetField(nameof(Thing.def))),
                         new CodeInstruction(OpCodes.Castclass, typeof(CustomBlightDef)),
-                        new CodeInstruction(OpCodes.Ldfld, typeof(CustomBlightDef).GetField(nameof(CustomBlightDef.letterLabel))),
+                        new CodeInstruction(OpCodes.Ldfld,
+                            typeof(CustomBlightDef).GetField(nameof(CustomBlightDef.letterLabel))),
+                        new CodeInstruction(OpCodes.Call, taggedStringImplicitCast),
 
                         // letterText
                         new CodeInstruction(OpCodes.Ldsfld, chosenBlight),
                         new CodeInstruction(OpCodes.Ldfld, typeof(Thing).GetField(nameof(Thing.def))),
                         new CodeInstruction(OpCodes.Castclass, typeof(CustomBlightDef)),
-                        new CodeInstruction(OpCodes.Ldfld, typeof(CustomBlightDef).GetField(nameof(CustomBlightDef.letterText)))
+                        new CodeInstruction(OpCodes.Ldfld,
+                            typeof(CustomBlightDef).GetField(nameof(CustomBlightDef.letterText))),
+                        new CodeInstruction(OpCodes.Call, taggedStringImplicitCast)
                     });
 
                     found++;

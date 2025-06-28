@@ -4,8 +4,8 @@ using RimWorld;
 
 namespace BlightsExpanded.Patches
 {
-    [HarmonyPatch(typeof(Plant), nameof(Plant.GrowthRate))]
-    public class Plant_GrowthRate_Postfix
+    [HarmonyPatch(typeof(Plant), "get_GrowthRate")]
+    public class Plant_GrowthPerTick_Postfix
     {
         static void Postfix(Plant __instance, ref float __result)
         {

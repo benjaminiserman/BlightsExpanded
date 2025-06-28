@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
 using HarmonyLib;
@@ -7,16 +8,26 @@ using Verse;
 
 namespace BlightsExpanded.Patches
 {
-    [HarmonyPatch(typeof(Plant), nameof(Plant.TickLong))]
     public class JobDriver_PlantWork_MakeNewToils
     {
+        public static void Apply(Harmony harmony)
+        {
+            harmony.Patch(typeof(JobDriver_PlantWork)
+                    .Inner("<>c__DisplayClass11_0")
+                    .GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.NonPublic)
+                    .First(m => m.Name == "<MakeNewToils>b__1"),
+                transpiler: new HarmonyMethod(typeof(JobDriver_PlantWork_MakeNewToils).GetMethod(nameof(Transpiler),
+                    BindingFlags.Static | BindingFlags.NonPublic))
+            );
+        }
+
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             var yieldNow = AccessTools.Method(typeof(Plant), nameof(Plant.YieldNow));
             var found = false;
             foreach (var instruction in instructions)
             {
-                if (instruction.opcode == OpCodes.Call && (MethodInfo)instruction.operand == yieldNow)
+                if (instruction.opcode == OpCodes.Callvirt && (MethodInfo)instruction.operand == yieldNow)
                 {
                     // OpCodes.Ldloc_1 already on stack
                     yield return new CodeInstruction(OpCodes.Ldloc_3);

@@ -12,7 +12,7 @@ namespace BlightsExpanded.Patches
     {
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            var blighted = AccessTools.Property(typeof(Plant), "Blighted");
+            var blighted = typeof(Plant).GetProperty(nameof(Plant.Blighted)).GetGetMethod();
             var found = false;
             foreach (var instruction in instructions)
             {

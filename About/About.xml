@@ -32,6 +32,6 @@
 		<v1.6>
 			<li>brrainz.harmony</li>
 		</v1.6>
-	  </loadAfterByVersion>
+	</loadAfterByVersion>
 	<packageId>winggar.blightsexpanded</packageId>
 </ModMetaData>

@@ -1,5 +1,6 @@
 using System.IO;
 using System.Reflection;
+using BlightsExpanded.Patches;
 using HarmonyLib;
 using Verse;
 
@@ -21,7 +22,9 @@ namespace BlightsExpanded
                 File.WriteAllText(VersionDir, CurrentVersion);
             }
 
-            new Harmony(Id).PatchAll();
+            var harmony = new Harmony(Id);
+            harmony.PatchAll();
+            JobDriver_PlantWork_MakeNewToils.Apply(harmony);
         }
     }
 }

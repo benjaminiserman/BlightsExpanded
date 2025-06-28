@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <BlightsExpanded.CustomBlight ParentName="Blight">
+  <BlightsExpanded.CustomBlight ParentName="EtherealThingBase">
 	<defName>DefaultBlight</defName>
 	<weight>1</weight>
+    <label>blight</label>
 	<letterLabel>Blight: {PLANTDEF_labelPlural}</letterLabel>
 	<letterText>Blight has been discovered on the {PLANTDEF_labelPlural}!
 \nYou should cut or burn the affected plants before the blight spreads.</letterText>
+    <thingClass>BlightsExpanded.CustomBlights.DefaultBlight</thingClass>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Long</tickerType>
+    <graphicData>
+      <texPath>Things/Plant/Blight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPlant</shaderType>
+    </graphicData>
   </BlightsExpanded.CustomBlight>
   <BlightsExpanded.CustomBlight ParentName="EtherealThingBase">
 	<defName>Boomblight></defName>

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
 using HarmonyLib;
@@ -7,12 +8,12 @@ using Verse;
 
 namespace BlightsExpanded.Patches
 {
-    [HarmonyPatch(typeof(Plant), nameof(Plant.GrowthRate))]
+    [HarmonyPatch(typeof(Plant), "get_GrowthRate")]
     public class Plant_GrowthRate_Transpiler
     {
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            var blighted = AccessTools.Property(typeof(Plant), nameof(Plant.GrowthRate));
+            var blighted = typeof(Plant).GetProperty(nameof(Plant.Blighted)).GetMethod;
             var found = false;
             foreach (var instruction in instructions)
             {
