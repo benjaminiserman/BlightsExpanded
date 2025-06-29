@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <BlightsExpanded.CustomBlight ParentName="EtherealThingBase">
+  <BlightsExpanded.CustomBlightDef ParentName="EtherealThingBase">
 	<defName>DefaultBlight</defName>
 	<weight>1</weight>
     <label>blight</label>
 	<letterLabel>Blight: {PLANTDEF_labelPlural}</letterLabel>
 	<letterText>Blight has been discovered on the {PLANTDEF_labelPlural}!
 \nYou should cut or burn the affected plants before the blight spreads.</letterText>
-    <thingClass>BlightsExpanded.CustomBlights.DefaultBlight</thingClass>
+    <thingClass>BlightsExpanded.Blights.DefaultBlight</thingClass>
     <drawerType>MapMeshOnly</drawerType>
     <tickerType>Long</tickerType>
     <graphicData>
@@ -15,16 +15,16 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPlant</shaderType>
     </graphicData>
-  </BlightsExpanded.CustomBlight>
-  <BlightsExpanded.CustomBlight ParentName="EtherealThingBase">
-	<defName>Boomblight></defName>
+  </BlightsExpanded.CustomBlightDef>
+  <BlightsExpanded.CustomBlightDef ParentName="EtherealThingBase">
+	<defName>Boomblight</defName>
 	<weight>100</weight>
 	<label>boomblight</label>
 	<letterLabel>Boomblight: {PLANTDEF_labelPlural}</letterLabel>
 	<letterText>Boomblight has been discovered on the {PLANTDEF_labelPlural}!
 \nEngineered long ago to improve crop yields by 20%, Boomblight has a side-effect of making crops intensely flammable.
 \nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature and risk your fields exploding if lit on fire.</letterText>
-	<thingClass>BlightsExpanded.CustomBlights.BoomblightBlight</thingClass>
+	<thingClass>BlightsExpanded.Blights.BoomblightBlight</thingClass>
     <drawerType>MapMeshOnly</drawerType>
     <tickerType>Long</tickerType>
     <graphicData>
@@ -32,19 +32,5 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPlant</shaderType>
     </graphicData>
-	<comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>1.1</explosiveRadius>
-        <explosiveDamageType>Flame</explosiveDamageType>
-        <explosiveExpandPerStackcount>0</explosiveExpandPerStackcount>
-        <startWickOnDamageTaken>
-          <li>Flame</li>
-        </startWickOnDamageTaken>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-        <preExplosionSpawnChance>1</preExplosionSpawnChance>
-        <wickTicks>70~150</wickTicks>
-      </li>
-    </comps>
-  </BlightsExpanded.CustomBlight>
+  </BlightsExpanded.CustomBlightDef>
 </Defs>
