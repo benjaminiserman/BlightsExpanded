@@ -16,6 +16,7 @@ namespace BlightsExpanded
             get
             {
                 customBlight = customBlight ?? (CustomBlight)Activator.CreateInstance(thingClass);
+                customBlight.def = this;
                 return customBlight;
             }
         }

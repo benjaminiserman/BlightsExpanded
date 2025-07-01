@@ -32,6 +32,12 @@ namespace BlightsExpanded.Patches
                 .GetMethods(BindingFlags.Public | BindingFlags.Static)
                 .First(m => m.Name == "op_Implicit"
                             && m.GetParameters()[0].ParameterType == typeof(string));
+            var plantDef = typeof(Thing).GetField(nameof(Plant.def));
+            var namedArgumentCtor = typeof(NamedArgument).GetConstructor(new[] { typeof(object), typeof(string) });
+            var translate = typeof(TranslatorFormattedStringExtensions).GetMethod(
+                nameof(TranslatorFormattedStringExtensions.Translate),
+                new[] { typeof(string), typeof(NamedArgument) }
+            );
 
             var found = 0;
             var originalCodes = new List<CodeInstruction>(instructions);
@@ -84,7 +90,11 @@ namespace BlightsExpanded.Patches
                         new CodeInstruction(OpCodes.Castclass, typeof(CustomBlightDef)),
                         new CodeInstruction(OpCodes.Ldfld,
                             typeof(CustomBlightDef).GetField(nameof(CustomBlightDef.letterLabel))),
-                        new CodeInstruction(OpCodes.Call, taggedStringImplicitCast),
+                        new CodeInstruction(OpCodes.Ldloc_1),
+                        new CodeInstruction(OpCodes.Ldfld, plantDef),
+                        new CodeInstruction(OpCodes.Ldstr, "PLANTDEF"),
+                        new CodeInstruction(OpCodes.Newobj, namedArgumentCtor),
+                        new CodeInstruction(OpCodes.Call, translate),
 
                         // letterText
                         new CodeInstruction(OpCodes.Ldsfld, chosenBlight),
@@ -92,7 +102,11 @@ namespace BlightsExpanded.Patches
                         new CodeInstruction(OpCodes.Castclass, typeof(CustomBlightDef)),
                         new CodeInstruction(OpCodes.Ldfld,
                             typeof(CustomBlightDef).GetField(nameof(CustomBlightDef.letterText))),
-                        new CodeInstruction(OpCodes.Call, taggedStringImplicitCast)
+                        new CodeInstruction(OpCodes.Ldloc_1),
+                        new CodeInstruction(OpCodes.Ldfld, plantDef),
+                        new CodeInstruction(OpCodes.Ldstr, "PLANTDEF"),
+                        new CodeInstruction(OpCodes.Newobj, namedArgumentCtor),
+                        new CodeInstruction(OpCodes.Call, translate),
                     });
 
                     found++;

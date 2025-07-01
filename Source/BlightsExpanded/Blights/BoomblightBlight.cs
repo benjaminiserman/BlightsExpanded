@@ -8,7 +8,7 @@ namespace BlightsExpanded.Blights
     {
         public ThingComp ExplosiveComp = new CompExplosive();
 
-        public override int AdjustYieldAmount(int yield) => (int)Math.Round(yield * 1.2);
+        public override int AdjustYieldAmount(int yield) => (int)Math.Round(yield * 1.5);
 
         public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {

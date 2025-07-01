@@ -55,6 +55,7 @@
         <Compile Include="CustomBlightDef.cs" />
         <Compile Include="CustomBlightHelper.cs" />
         <Compile Include="Patches\Blight_TickLong.cs" />
+        <Compile Include="Patches\Blight_TryReproduceNow.cs" />
         <Compile Include="Patches\IncidentWorker_CropBlight_TryExecuteWorker.cs" />
         <Compile Include="Patches\Plant_CanYieldNow.cs" />
         <Compile Include="Patches\Plant_GrowthRate_Postfix.cs" />

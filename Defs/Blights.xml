@@ -22,7 +22,7 @@
 	<label>boomblight</label>
 	<letterLabel>Boomblight: {PLANTDEF_labelPlural}</letterLabel>
 	<letterText>Boomblight has been discovered on the {PLANTDEF_labelPlural}!
-\nEngineered long ago to improve crop yields by 20%, Boomblight has a side-effect of making crops intensely flammable.
+\nEngineered long ago to improve crop yields by 50%, Boomblight has a side-effect of making crops intensely flammable.
 \nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature and risk your fields exploding if lit on fire.</letterText>
 	<thingClass>BlightsExpanded.Blights.BoomblightBlight</thingClass>
     <drawerType>MapMeshOnly</drawerType>
@@ -32,5 +32,10 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPlant</shaderType>
     </graphicData>
+	<useHitPoints>true</useHitPoints>
+	<statBases>
+      <MaxHitPoints>5</MaxHitPoints>
+      <Flammability>1.5</Flammability>
+    </statBases>
   </BlightsExpanded.CustomBlightDef>
 </Defs>
