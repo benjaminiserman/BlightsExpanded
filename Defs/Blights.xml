@@ -35,7 +35,7 @@
 	<useHitPoints>true</useHitPoints>
 	<statBases>
       <MaxHitPoints>5</MaxHitPoints>
-      <Flammability>1.5</Flammability>
+      <Flammability>15</Flammability>
     </statBases>
   </BlightsExpanded.CustomBlightDef>
 </Defs>

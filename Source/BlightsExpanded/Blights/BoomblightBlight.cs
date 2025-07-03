@@ -18,7 +18,7 @@ namespace BlightsExpanded.Blights
                 GenExplosion.DoExplosion(
                     Position,
                     Map,
-                    1.5f,
+                    2.5f,
                     DamageDefOf.Flame,
                     null,
                     preExplosionSpawnThingDef: ThingDefOf.Filth_Fuel,
