@@ -16,6 +16,7 @@
       <shaderType>TransparentPlant</shaderType>
     </graphicData>
   </BlightsExpanded.CustomBlightDef>
+  
   <BlightsExpanded.CustomBlightDef ParentName="EtherealThingBase">
 	<defName>Boomblight</defName>
 	<weight>100</weight>
@@ -37,5 +38,77 @@
       <MaxHitPoints>5</MaxHitPoints>
       <Flammability>15</Flammability>
     </statBases>
+  </BlightsExpanded.CustomBlightDef>
+  
+  <BlightsExpanded.CustomBlightDef ParentName="EtherealThingBase">
+	<defName>Rageblight</defName>
+	<weight>100</weight>
+	<label>rageblight</label>
+	<letterLabel>Rageblight: {PLANTDEF_labelPlural}</letterLabel>
+	<letterText>Rageblight has been discovered on the {PLANTDEF_labelPlural}!
+\An ancient blight said to attract the vengeful spirits of hunted and slaughtered animals, Boomblight is otherwise harmless to plants.
+\nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature.</letterText>
+	<thingClass>BlightsExpanded.Blights.RageblightBlight</thingClass>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Long</tickerType>
+    <graphicData>
+      <texPath>Things/Plant/Rageblight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPlant</shaderType>
+    </graphicData>
+  </BlightsExpanded.CustomBlightDef>
+  
+  <BlightsExpanded.CustomBlightDef ParentName="EtherealThingBase">
+	<defName>Hypergrowth</defName>
+	<weight>100</weight>
+	<label>hypergrowth</label>
+	<letterLabel>Hypergrowth: {PLANTDEF_labelPlural}</letterLabel>
+	<letterText>Signs of Hypergrowth have been discovered on the {PLANTDEF_labelPlural}!
+\Hypergrowth is a strange disease that makes crops grow twice as fast, but yield far less.
+\nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature for one-third of their normal yield.</letterText>
+	<thingClass>BlightsExpanded.Blights.HypergrowthBlight</thingClass>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Long</tickerType>
+    <graphicData>
+      <texPath>Things/Plant/Ageblight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPlant</shaderType>
+    </graphicData>
+  </BlightsExpanded.CustomBlightDef>
+  
+  <BlightsExpanded.CustomBlightDef ParentName="EtherealThingBase">
+	<defName>Transformer Mechanites</defName>
+	<weight>100</weight>
+	<label>transformer mechanites</label>
+	<letterLabel>Transformer Mechanites: {PLANTDEF_labelPlural}</letterLabel>
+	<letterText>Transformer Mechanites have been discovered on the {PLANTDEF_labelPlural}!
+\Semi-coherent mechanites that spread throughout plants, Transformer Mechanites destroy the organic material within plants, leaving behind only metal.
+\nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature to obtain a small amount of various metals</letterText>
+	<thingClass>BlightsExpanded.Blights.TransformerMechanitesBlight</thingClass>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Long</tickerType>
+    <graphicData>
+      <texPath>Things/Plant/Mechblight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPlant</shaderType>
+    </graphicData>
+  </BlightsExpanded.CustomBlightDef>
+  
+  <BlightsExpanded.CustomBlightDef ParentName="EtherealThingBase">
+	<defName>Waster's Breath</defName>
+	<weight>100</weight>
+	<label>waster's breath</label>
+	<letterLabel>Waster's Breath: {PLANTDEF_labelPlural}</letterLabel>
+	<letterText>Waster's Breath has been discovered on the {PLANTDEF_labelPlural}!
+\nWorshipped by many Waster cultures, Waster's Breath causes crops to age 25% faster, but emit toxic gas throughout their lifespans.
+\nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature.</letterText>
+	<thingClass>BlightsExpanded.Blights.WastersBreathBlight</thingClass>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Long</tickerType>
+    <graphicData>
+      <texPath>Things/Plant/Toxblight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPlant</shaderType>
+    </graphicData>
   </BlightsExpanded.CustomBlightDef>
 </Defs>
