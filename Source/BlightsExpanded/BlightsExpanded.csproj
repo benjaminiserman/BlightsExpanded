@@ -52,6 +52,10 @@
         <Compile Include="Blights\BoomblightBlight.cs" />
         <Compile Include="Blights\CustomBlight.cs" />
         <Compile Include="Blights\DefaultBlight.cs" />
+        <Compile Include="Blights\HypergrowthBlight.cs" />
+        <Compile Include="Blights\RageblightBlight.cs" />
+        <Compile Include="Blights\TransformerMechanitesBlight.cs" />
+        <Compile Include="Blights\WastersBreathBlight.cs" />
         <Compile Include="CustomBlightDef.cs" />
         <Compile Include="CustomBlightHelper.cs" />
         <Compile Include="Patches\Blight_TickLong.cs" />
