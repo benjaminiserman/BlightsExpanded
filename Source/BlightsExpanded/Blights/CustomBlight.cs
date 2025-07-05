@@ -9,6 +9,8 @@ namespace BlightsExpanded.Blights
 {
     public abstract class CustomBlight : Blight
     {
+        public CustomBlightDef BlightDef => (CustomBlightDef)def;
+
         public virtual void SpawnBlight(Plant plant)
         {
             if (plant.Blighted)
@@ -24,9 +26,9 @@ namespace BlightsExpanded.Blights
         {
         }
 
-        public virtual bool ShouldBlockGrowth() => false;
-        public virtual float AdjustGrowthRate(float growthRate) => growthRate;
-        public virtual bool ShouldBlockYield() => false;
-        public virtual int AdjustYieldAmount(int yield) => yield;
+        public bool ShouldBlockGrowth() => BlightDef.blockGrowth;
+        public float AdjustGrowthRate(float growthRate) => growthRate * BlightDef.growthMultipler;
+        public bool ShouldBlockYield() => BlightDef.blockYield;
+        public int AdjustYieldAmount(int yield) => (int)Math.Round(yield * BlightDef.yieldMultiplier);
     }
 }

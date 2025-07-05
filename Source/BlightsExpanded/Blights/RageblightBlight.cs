@@ -7,7 +7,10 @@ namespace BlightsExpanded.Blights
     {
         public override void TickLong()
         {
-            if (Rand.MTBEventOccurs(1000, 60_000, 2000))
+            if (Rand.MTBEventOccurs(
+                    BlightDef.rageblightEventMtb,
+                    BlightDef.rageblightMtbUnitTicks,
+                    2000))
             {
                 var parms = new IncidentParms
                 {

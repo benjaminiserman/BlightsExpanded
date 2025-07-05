@@ -8,8 +8,6 @@ namespace BlightsExpanded.Blights
     {
         public ThingComp ExplosiveComp = new CompExplosive();
 
-        public override int AdjustYieldAmount(int yield) => (int)Math.Round(yield * 1.5);
-
         public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
             if (dinfo.Def == DamageDefOf.Flame)
@@ -18,7 +16,7 @@ namespace BlightsExpanded.Blights
                 GenExplosion.DoExplosion(
                     Position,
                     Map,
-                    2.5f,
+                    BlightDef.boomblightBlastRadius,
                     DamageDefOf.Flame,
                     null,
                     preExplosionSpawnThingDef: ThingDefOf.Filth_Fuel,

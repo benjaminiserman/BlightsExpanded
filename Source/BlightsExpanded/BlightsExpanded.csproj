@@ -51,8 +51,6 @@
         <Compile Include="BlightsExpandedMod.cs" />
         <Compile Include="Blights\BoomblightBlight.cs" />
         <Compile Include="Blights\CustomBlight.cs" />
-        <Compile Include="Blights\DefaultBlight.cs" />
-        <Compile Include="Blights\HypergrowthBlight.cs" />
         <Compile Include="Blights\RageblightBlight.cs" />
         <Compile Include="Blights\TransformerMechanitesBlight.cs" />
         <Compile Include="Blights\WastersBreathBlight.cs" />
@@ -67,6 +65,7 @@
         <Compile Include="Patches\JobDriver_PlantWork_MakeNewToils.cs" />
         <Compile Include="Patches\Plant_YieldNow.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="ThingCountWeightDef.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />
