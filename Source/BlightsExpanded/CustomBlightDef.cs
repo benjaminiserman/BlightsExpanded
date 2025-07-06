@@ -11,25 +11,28 @@ namespace BlightsExpanded
         public string letterLabel;
         public string letterText;
 
+        public string mayRequire;
+
         public float yieldMultiplier;
-        public float growthMultipler;
+        public float growthMultiplier;
         public bool blockYield;
         public bool blockGrowth;
 
         // Blight-specific props
         public float boomblightBlastRadius;
 
-        public float rageblightEventMtb;
-        public float rageblightMtbUnitTicks;
+        public float spiritblightEventMtbFor100;
+        public float spiritblightMtbUnitTicks;
 
-        public float wastersBreathGasMtb;
-        public float wastersBreathMtbUnitTicks;
-        public float wastersBreathGasAmount;
+        public float gasChance;
+        public float gasAmount;
+        public GasType gasType;
 
-        public float transformerMechanitesDropChance;
-        public List<ThingCountWeightDef> transformerMechanitesDrops;
+        public float replaceHarvestChance;
+        public List<ThingCountWeightDef> replaceHarvestDrops;
 
         private CustomBlight customBlight;
+
         public CustomBlight CustomBlight
         {
             get

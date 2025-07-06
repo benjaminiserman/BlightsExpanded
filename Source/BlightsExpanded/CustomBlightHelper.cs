@@ -1,3 +1,4 @@
+using System.Linq;
 using BlightsExpanded.Blights;
 using RimWorld;
 using Verse;
@@ -7,12 +8,26 @@ namespace BlightsExpanded
 {
     public static class CustomBlightHelper
     {
+        public static bool MayRequireFulfilled(CustomBlightDef def)
+        {
+            if (string.IsNullOrEmpty(def.mayRequire))
+            {
+                return true;
+            }
+
+            return LoadedModManager.RunningModsListForReading
+                .Any(mod => mod.PackageId.EqualsIgnoreCase(def.mayRequire));
+        }
+
         public static CustomBlightDef PickBlight()
         {
-            DefDatabase<CustomBlightDef>.AllDefsListForReading.TryRandomElementByWeight(
-                def => def.weight,
-                out var result
-            );
+            DefDatabase<CustomBlightDef>.AllDefsListForReading
+                .Where(MayRequireFulfilled)
+                .TryRandomElementByWeight(
+                    def => def.weight,
+                    out var result
+                );
+
             return result;
         }
 

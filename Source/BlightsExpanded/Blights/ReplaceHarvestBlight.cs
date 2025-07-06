@@ -4,17 +4,18 @@ using Verse.AI;
 
 namespace BlightsExpanded.Blights
 {
-    public class TransformerMechanitesBlight : CustomBlight
+    public class ReplaceHarvestBlight : CustomBlight
     {
         public override void OnHarvest(float statValue, Pawn actor, JobDriver jobDriver)
         {
-            if (Rand.Chance(BlightDef.transformerMechanitesDropChance))
+            if (Rand.Chance(BlightDef.replaceHarvestChance))
             {
-                if (BlightDef.transformerMechanitesDrops.TryRandomElementByWeight(x => x.weight, out var drop))
+                if (BlightDef.replaceHarvestDrops.TryRandomElementByWeight(x => x.weight, out var drop))
                 {
                     var thing = ThingMaker.MakeThing(drop.thingDef);
-                    thing.stackCount = (int)Math.Round(drop.count.RandomInRange * Plant.Growth);
-                    if (stackCount > 0)
+                    var adjustedStackCount = drop.count.RandomInRange * Plant.Growth;
+                    thing.stackCount = (int)adjustedStackCount + (Rand.Chance(adjustedStackCount % 1) ? 1 : 0);
+                    if (thing.stackCount > 0)
                     {
                         GenPlace.TryPlaceThing(thing, actor.Position, actor.Map, ThingPlaceMode.Near);
                     }

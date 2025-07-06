@@ -34,8 +34,8 @@ namespace BlightsExpanded.Patches
                             && m.GetParameters()[0].ParameterType == typeof(string));
             var plantDef = typeof(Thing).GetField(nameof(Plant.def));
             var namedArgumentCtor = typeof(NamedArgument).GetConstructor(new[] { typeof(object), typeof(string) });
-            var translate = typeof(TranslatorFormattedStringExtensions).GetMethod(
-                nameof(TranslatorFormattedStringExtensions.Translate),
+            var format = typeof(GrammarResolverSimpleStringExtensions).GetMethod(
+                nameof(GrammarResolverSimpleStringExtensions.Formatted),
                 new[] { typeof(string), typeof(NamedArgument) }
             );
 
@@ -94,7 +94,7 @@ namespace BlightsExpanded.Patches
                         new CodeInstruction(OpCodes.Ldfld, plantDef),
                         new CodeInstruction(OpCodes.Ldstr, "PLANTDEF"),
                         new CodeInstruction(OpCodes.Newobj, namedArgumentCtor),
-                        new CodeInstruction(OpCodes.Call, translate),
+                        new CodeInstruction(OpCodes.Call, format),
 
                         // letterText
                         new CodeInstruction(OpCodes.Ldsfld, chosenBlight),
@@ -106,7 +106,7 @@ namespace BlightsExpanded.Patches
                         new CodeInstruction(OpCodes.Ldfld, plantDef),
                         new CodeInstruction(OpCodes.Ldstr, "PLANTDEF"),
                         new CodeInstruction(OpCodes.Newobj, namedArgumentCtor),
-                        new CodeInstruction(OpCodes.Call, translate),
+                        new CodeInstruction(OpCodes.Call, format),
                     });
 
                     found++;

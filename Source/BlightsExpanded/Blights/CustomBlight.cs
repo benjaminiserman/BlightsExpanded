@@ -27,7 +27,7 @@ namespace BlightsExpanded.Blights
         }
 
         public bool ShouldBlockGrowth() => BlightDef.blockGrowth;
-        public float AdjustGrowthRate(float growthRate) => growthRate * BlightDef.growthMultipler;
+        public float AdjustGrowthRate(float growthRate) => growthRate * BlightDef.growthMultiplier;
         public bool ShouldBlockYield() => BlightDef.blockYield;
         public int AdjustYieldAmount(int yield) => (int)Math.Round(yield * BlightDef.yieldMultiplier);
     }

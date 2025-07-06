@@ -1,150 +1,156 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <BlightsExpanded.CustomBlightDef Abstract="True" Name="CustomBlight" ParentName="EtherealThingBase">
-	<weight>100</weight>
-    <thingClass>BlightsExpanded.Blights.CustomBlight</thingClass>
-    <drawerType>MapMeshOnly</drawerType>
-    <tickerType>Long</tickerType>
-	<growthMultiplier>1.5</growthMultiplier>
-	<yieldMultiplier>1.5</yieldMultiplier>
-	<blockYield>false</blockYield>
-	<blockGrowth>false</blockGrowth>
-  </BlightsExpanded.CustomBlightDef>
+	<BlightsExpanded.CustomBlightDef Abstract="True" Name="CustomBlight"
+		ParentName="EtherealThingBase">
+		<weight>100</weight>
+		<thingClass>BlightsExpanded.Blights.CustomBlight</thingClass>
+		<drawerType>MapMeshOnly</drawerType>
+		<tickerType>Long</tickerType>
+		<growthMultiplier>1</growthMultiplier>
+		<yieldMultiplier>1</yieldMultiplier>
+		<blockYield>false</blockYield>
+		<blockGrowth>false</blockGrowth>
+	</BlightsExpanded.CustomBlightDef>
 
 
-  <BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
-	<defName>DefaultBlight</defName>
-    <label>blight</label>
-	<letterLabel>Blight: {PLANTDEF_labelPlural}</letterLabel>
-	<letterText>Blight has been discovered on the {PLANTDEF_labelPlural}!
+	<BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
+		<defName>DefaultBlight</defName>
+		<label>blight</label>
+		<letterLabel>Blight: {PLANTDEF_labelPlural}</letterLabel>
+		<letterText>Blight has been discovered on the {PLANTDEF_labelPlural}!
 \nYou should cut or burn the affected plants before the blight spreads.</letterText>
-    <graphicData>
-      <texPath>Things/Plant/Blight</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPlant</shaderType>
-    </graphicData>
-	<blockYield>true</blockYield>
-	<blockGrowth>true</blockGrowth>
-	<weight>0</weight>
-  </BlightsExpanded.CustomBlightDef>
-  
-  <BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
-	<defName>Boomblight</defName>
-	<label>boomblight</label>
-	<letterLabel>Boomblight: {PLANTDEF_labelPlural}</letterLabel>
-	<letterText>Boomblight has been discovered on the {PLANTDEF_labelPlural}!
+		<graphicData>
+			<texPath>Things/Plant/Blight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPlant</shaderType>
+		</graphicData>
+		<blockYield>true</blockYield>
+		<blockGrowth>true</blockGrowth>
+		<weight>0</weight>
+	</BlightsExpanded.CustomBlightDef>
+
+	<BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
+		<defName>Boomblight</defName>
+		<label>boomblight</label>
+		<letterLabel>Boomblight: {PLANTDEF_labelPlural}</letterLabel>
+		<letterText>Boomblight has been discovered on the {PLANTDEF_labelPlural}!
 \nEngineered long ago to improve crop yields by 50%, Boomblight has a side-effect of making crops intensely flammable.
 \nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature and risk your fields exploding if lit on fire.</letterText>
-	<thingClass>BlightsExpanded.Blights.BoomblightBlight</thingClass>
-    <graphicData>
-      <texPath>Things/Plant/Boomblight</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPlant</shaderType>
-    </graphicData>
-	<useHitPoints>true</useHitPoints>
-	<statBases>
-      <MaxHitPoints>5</MaxHitPoints>
-      <Flammability>15</Flammability>
-    </statBases>
-	<boomblightBlastRadius>2.5</boomblightBlastRadius>
-	<yieldMultiplier>1.5</yieldMultiplier>
-  </BlightsExpanded.CustomBlightDef>
-  
-  <BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
-	<defName>Rageblight</defName>
-	<label>rageblight</label>
-	<letterLabel>Rageblight: {PLANTDEF_labelPlural}</letterLabel>
-	<letterText>Rageblight has been discovered on the {PLANTDEF_labelPlural}!
-\An ancient blight said to attract the vengeful spirits of hunted and slaughtered animals, Boomblight is otherwise harmless to plants.
+		<thingClass>BlightsExpanded.Blights.BoomblightBlight</thingClass>
+		<graphicData>
+			<texPath>Things/Plant/Boomblight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPlant</shaderType>
+		</graphicData>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<Flammability>15</Flammability>
+		</statBases>
+		<boomblightBlastRadius>2.5</boomblightBlastRadius>
+		<yieldMultiplier>1.5</yieldMultiplier>
+	</BlightsExpanded.CustomBlightDef>
+
+	<BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
+		<defName>Spiritblight</defName>
+		<label>spiritblight</label>
+		<letterLabel>Spiritblight: {PLANTDEF_labelPlural}</letterLabel>
+		<letterText>Spiritblight has been discovered on the {PLANTDEF_labelPlural}!
+\An ancient blight said to attract the vengeful spirits of hunted and slaughtered animals, Spiritblight is otherwise harmless to plants.
 \nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature.</letterText>
-	<thingClass>BlightsExpanded.Blights.RageblightBlight</thingClass>
-    <graphicData>
-      <texPath>Things/Plant/Rageblight</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPlant</shaderType>
-    </graphicData>
-	<rageblightEventMtb>1000</rageblightEventMtb>
-	<rageblightMtbUnitTicks>60000</rageblightMtbUnitTicks>
-  </BlightsExpanded.CustomBlightDef>
-  
-  <BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
-	<defName>Hypergrowth</defName>
-	<label>hypergrowth</label>
-	<letterLabel>Hypergrowth: {PLANTDEF_labelPlural}</letterLabel>
-	<letterText>Signs of Hypergrowth have been discovered on the {PLANTDEF_labelPlural}!
-\Hypergrowth is a strange disease that makes crops grow twice as fast, but yield far less.
-\nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature for one-third of their normal yield.</letterText>
-    <graphicData>
-      <texPath>Things/Plant/Ageblight</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPlant</shaderType>
-    </graphicData>
-	<growthMultiplier>2</growthMultiplier>
-	<yieldMultiplier>0.33</yieldMultiplier>
-  </BlightsExpanded.CustomBlightDef>
-  
-  <BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
-	<defName>Transformer Mechanites</defName>
-	<weight>100</weight>
-	<label>transformer mechanites</label>
-	<letterLabel>Transformer Mechanites: {PLANTDEF_labelPlural}</letterLabel>
-	<letterText>Transformer Mechanites have been discovered on the {PLANTDEF_labelPlural}!
-\Semi-coherent mechanites that spread throughout plants, Transformer Mechanites destroy the organic material within plants, leaving behind only metal.
-\nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature to obtain a small amount of various metals</letterText>
-    <graphicData>
-      <texPath>Things/Plant/Mechblight</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPlant</shaderType>
-    </graphicData>
-	<blockYield>true</blockYield>
-	<blockGrowth>true</blockGrowth>
-	<transformerMechanitesDropChance>0.5</transformerMechanitesDropChance>
-	<transformerMechanitesDrops>
-		<BlightsExpanded.ThingCountWeightDef>
-			<thingDef>Steel</thingDef>
-			<count>1~3</count>
-			<weight>100</weight>
-		</BlightsExpanded.ThingCountWeightDef>
-		<BlightsExpanded.ThingCountWeightDef>
-			<thingDef>Plasteel</thingDef>
-			<count>1~3</count>
-			<weight>10</weight>
-		</BlightsExpanded.ThingCountWeightDef>
-		<BlightsExpanded.ThingCountWeightDef>
-			<thingDef>Uranium</thingDef>
-			<count>1~3</count>
-			<weight>5</weight>
-		</BlightsExpanded.ThingCountWeightDef>
-		<BlightsExpanded.ThingCountWeightDef>
-			<thingDef>Gold</thingDef>
-			<count>1~10</count>
-			<weight>1</weight>
-		</BlightsExpanded.ThingCountWeightDef>
-		<BlightsExpanded.ThingCountWeightDef>
-			<thingDef>Component</thingDef>
-			<count>1</count>
-			<weight>5</weight>
-		</BlightsExpanded.ThingCountWeightDef>
-	</transformerMechanitesDrops>
-  </BlightsExpanded.CustomBlightDef>
-  
-  <BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
-	<defName>Waster's Breath</defName>
-	<weight>100</weight>
-	<label>waster's breath</label>
-	<letterLabel>Waster's Breath: {PLANTDEF_labelPlural}</letterLabel>
-	<letterText>Waster's Breath has been discovered on the {PLANTDEF_labelPlural}!
-\nWorshipped by many Waster cultures, Waster's Breath causes crops to age 25% faster, but emit toxic gas throughout their lifespans.
+		<thingClass>BlightsExpanded.Blights.SpiritblightBlight</thingClass>
+		<graphicData>
+			<texPath>Things/Plant/Spiritblight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPlant</shaderType>
+		</graphicData>
+		<spiritblightEventMtbFor100>7</spiritblightEventMtbFor100>
+		<spiritblightMtbUnitTicks>60000</spiritblightMtbUnitTicks>
+	</BlightsExpanded.CustomBlightDef>
+
+	<BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
+		<defName>Hypergrowth</defName>
+		<label>hypergrowth</label>
+		<letterLabel>Hypergrowth: {PLANTDEF_labelPlural}</letterLabel>
+		<letterText>Signs of Hypergrowth have been discovered on the {PLANTDEF_labelPlural}!
+\nHypergrowth is a strange disease that makes crops grow twice as fast, yield half as much, and constantly emit rotstink.
+\nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature for half yield.</letterText>
+		<thingClass>BlightsExpanded.Blights.GasBlight</thingClass>
+		<graphicData>
+			<texPath>Things/Plant/Hypergrowth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPlant</shaderType>
+		</graphicData>
+		<growthMultiplier>2</growthMultiplier>
+		<yieldMultiplier>0.5</yieldMultiplier>
+		<gasChance>0.03</gasChance>
+		<gasAmount>1</gasAmount>
+		<gasType>RotStink</gasType>
+	</BlightsExpanded.CustomBlightDef>
+
+	<BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
+		<defName>TransformerMechanites</defName>
+		<label>transformer mechanites</label>
+		<letterLabel>Transformer Mechanites: {PLANTDEF_labelPlural}</letterLabel>
+		<letterText>Transformer Mechanites have been discovered on the {PLANTDEF_labelPlural}!
+\nSemi-coherent mechanites that spread throughout plants, Transformer Mechanites halt growth and destroy the organic material within plants, leaving behind only metal.
+\nYou can cut the affected plants before the blight spreads, or allow it to spread to mature crops to harvest for more metal.</letterText>
+		<thingClass>BlightsExpanded.Blights.ReplaceHarvestBlight</thingClass>
+		<graphicData>
+			<texPath>Things/Plant/TransformerMechanites</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPlant</shaderType>
+		</graphicData>
+		<blockYield>true</blockYield>
+		<blockGrowth>true</blockGrowth>
+		<replaceHarvestChance>0.5</replaceHarvestChance>
+		<replaceHarvestDrops>
+			<li>
+				<thingDef>Steel</thingDef>
+				<count>1~3</count>
+				<weight>100</weight>
+			</li>
+			<li>
+				<thingDef>Plasteel</thingDef>
+				<count>1~3</count>
+				<weight>10</weight>
+			</li>
+			<li>
+				<thingDef>Uranium</thingDef>
+				<count>1~3</count>
+				<weight>5</weight>
+			</li>
+			<li>
+				<thingDef>Gold</thingDef>
+				<count>1~10</count>
+				<weight>1</weight>
+			</li>
+			<li>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>1</count>
+				<weight>2</weight>
+			</li>
+		</replaceHarvestDrops>
+	</BlightsExpanded.CustomBlightDef>
+
+	<BlightsExpanded.CustomBlightDef ParentName="CustomBlight">
+		<mayRequire>Ludeon.Rimworld.Biotech</mayRequire>
+		<defName>WastersBreath</defName>
+		<label>waster's breath</label>
+		<letterLabel>Waster's Breath: {PLANTDEF_labelPlural}</letterLabel>
+		<letterText>Waster's Breath has been discovered on the {PLANTDEF_labelPlural}!
+\nVenerated in many Waster cultures, Waster's Breath causes crops to yield 25% more, grow 25% slower, and emit toxic gas throughout their lifespans.
 \nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature.</letterText>
-	<thingClass>BlightsExpanded.Blights.WastersBreathBlight</thingClass>
-    <graphicData>
-      <texPath>Things/Plant/Toxblight</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPlant</shaderType>
-    </graphicData>
-	<growthMultiplier>1.25</growthMultiplier>
-	<wastersBreathGasMtb>1.5</wastersBreathGasMtb>
-	<wastersBreathMtbUnitTicks>2500</wastersBreathMtbUnitTicks>
-	<wastersBreathGasAmount>10</wastersBreathGasAmount>
-  </BlightsExpanded.CustomBlightDef>
+		<thingClass>BlightsExpanded.Blights.GasBlight</thingClass>
+		<graphicData>
+			<texPath>Things/Plant/WastersBreath</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPlant</shaderType>
+		</graphicData>
+		<yieldMultiplier>1.25</yieldMultiplier>
+		<growthMultiplier>0.75</growthMultiplier>
+		<gasChance>0.03</gasChance>
+		<gasAmount>1</gasAmount>
+		<gasType>ToxGas</gasType>
+	</BlightsExpanded.CustomBlightDef>
 </Defs>
