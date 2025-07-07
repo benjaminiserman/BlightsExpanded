@@ -56,7 +56,7 @@
 		<label>spiritblight</label>
 		<letterLabel>Spiritblight: {PLANTDEF_labelPlural}</letterLabel>
 		<letterText>Spiritblight has been discovered on the {PLANTDEF_labelPlural}!
-\An ancient blight said to attract the vengeful spirits of hunted and slaughtered animals, Spiritblight is otherwise harmless to plants.
+\nAn ancient blight said to attract the vengeful spirits of hunted and slaughtered animals, Spiritblight is otherwise harmless to plants.
 \nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature.</letterText>
 		<thingClass>BlightsExpanded.Blights.SpiritblightBlight</thingClass>
 		<graphicData>
