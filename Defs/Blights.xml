@@ -73,7 +73,7 @@
 		<label>hypergrowth</label>
 		<letterLabel>Hypergrowth: {PLANTDEF_labelPlural}</letterLabel>
 		<letterText>Signs of Hypergrowth have been discovered on the {PLANTDEF_labelPlural}!
-\nHypergrowth is a strange disease that makes crops grow twice as fast, yield half as much, and constantly emit rotstink.
+\nHypergrowth is a strange disease that makes crops grow twice as fast, but yield half as much constantly emit rotstink from the stress.
 \nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature for half yield.</letterText>
 		<thingClass>BlightsExpanded.Blights.GasBlight</thingClass>
 		<graphicData>
@@ -139,7 +139,7 @@
 		<label>waster's breath</label>
 		<letterLabel>Waster's Breath: {PLANTDEF_labelPlural}</letterLabel>
 		<letterText>Waster's Breath has been discovered on the {PLANTDEF_labelPlural}!
-\nVenerated in many Waster cultures, Waster's Breath causes crops to yield 25% more, grow 25% slower, and emit toxic gas throughout their lifespans.
+\nVenerated in many Waster cultures, Waster's Breath causes crops to yield 50% more, grow 25% slower, and emit toxic gas throughout their lifespans.
 \nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature.</letterText>
 		<thingClass>BlightsExpanded.Blights.GasBlight</thingClass>
 		<graphicData>
@@ -147,7 +147,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPlant</shaderType>
 		</graphicData>
-		<yieldMultiplier>1.25</yieldMultiplier>
+		<yieldMultiplier>1.5</yieldMultiplier>
 		<growthMultiplier>0.75</growthMultiplier>
 		<gasChance>0.03</gasChance>
 		<gasAmount>1</gasAmount>
