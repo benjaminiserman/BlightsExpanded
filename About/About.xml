@@ -6,7 +6,16 @@
 		<li>1.5</li>
 		<li>1.6</li>
 	</supportedVersions>
-	<description>More blights!</description>
+	<description>Blights in base-game are one of the least interesting events. It appears, you auto-cut blight, and the story goes on. This relatively small mod replaces vanilla blights with a few new ones that ask the player to think a bit deeper before clicking "cut all blight".
+	
+Without further ado, the blights:
+ - Boomblight improves crop yields, but makes them INTENSELY flammable.
+ - Spiritblight slightly slows down crop growth and causes occasional manhunter packs.
+ - Hypergrowth doubles crop growth, but halves crop yield and makes crops emit rotstink.
+ - Transformer Mechanites cannibalize plants, stopping their growth and making them yield various metals when harvested.
+ - Waster's Breath improves crop yields, but slows crop growth and makes crops emit toxblight. (requires Biotech)
+ 
+Feel free to share feedback or suggestions in the comments below. Have a great day y'all.</description>
 	<modDependenciesByVersion>
 		<v1.5>
 			<li>

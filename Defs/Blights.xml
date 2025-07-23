@@ -56,7 +56,7 @@
 		<label>spiritblight</label>
 		<letterLabel>Spiritblight: {PLANTDEF_labelPlural}</letterLabel>
 		<letterText>Spiritblight has been discovered on the {PLANTDEF_labelPlural}!
-\nAn ancient blight said to attract the vengeful spirits of hunted and slaughtered animals, Spiritblight is otherwise harmless to plants.
+\nAn ancient blight said to attract the vengeful spirits of hunted and slaughtered animals, Spiritblight slows growth by 25% but is otherwise harmless to plants.
 \nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature.</letterText>
 		<thingClass>BlightsExpanded.Blights.SpiritblightBlight</thingClass>
 		<graphicData>
@@ -64,6 +64,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPlant</shaderType>
 		</graphicData>
+		<growthMultiplier>0.75</growthMultiplier>
 		<spiritblightEventMtbFor100>7</spiritblightEventMtbFor100>
 		<spiritblightMtbUnitTicks>60000</spiritblightMtbUnitTicks>
 	</BlightsExpanded.CustomBlightDef>
@@ -73,7 +74,7 @@
 		<label>hypergrowth</label>
 		<letterLabel>Hypergrowth: {PLANTDEF_labelPlural}</letterLabel>
 		<letterText>Signs of Hypergrowth have been discovered on the {PLANTDEF_labelPlural}!
-\nHypergrowth is a strange disease that makes crops grow twice as fast, but yield half as much constantly emit rotstink from the stress.
+\nHypergrowth is a strange disease that makes crops grow twice as fast, but yield 55% less and constantly emit rotstink from the stress.
 \nYou can cut the affected plants before the blight spreads, or harvest when the crops are mature for half yield.</letterText>
 		<thingClass>BlightsExpanded.Blights.GasBlight</thingClass>
 		<graphicData>
@@ -82,7 +83,7 @@
 			<shaderType>TransparentPlant</shaderType>
 		</graphicData>
 		<growthMultiplier>2</growthMultiplier>
-		<yieldMultiplier>0.5</yieldMultiplier>
+		<yieldMultiplier>0.45</yieldMultiplier>
 		<gasChance>0.03</gasChance>
 		<gasAmount>1</gasAmount>
 		<gasType>RotStink</gasType>
@@ -103,7 +104,7 @@
 		</graphicData>
 		<blockYield>true</blockYield>
 		<blockGrowth>true</blockGrowth>
-		<replaceHarvestChance>0.5</replaceHarvestChance>
+		<replaceHarvestChance>0.75</replaceHarvestChance>
 		<replaceHarvestDrops>
 			<li>
 				<thingDef>Steel</thingDef>
